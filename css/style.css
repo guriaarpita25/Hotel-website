@@ -329,88 +329,32 @@ p {
 }
 
 /* 6 Services */
-.service-item-wrap {
-    background-color: var(--bg-color);
+.services-section {
+  background: url("../images/services/bg2.webp") center/cover no-repeat;
+  position: relative;
 }
 
-.service-menu-area ul li a {
-    display: block;
-    margin-bottom: 2.8125rem;
+.service-card {
+  background: rgb(133, 122, 122);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 30px;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: 0.3s;
+  height: 100%;
 }
 
-.service-menu-area ul li a .service-icon {
-    height: 5.625rem;
-    width: 5.625rem;
-    background-color: var(--secondary-color);
-    line-height: 5.625rem;
-    text-align: center;
-    border-radius: 100%;
-    float: left;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+.service-card h4 {
+  color: #f9c300;
+  margin-bottom: 15px;
 }
 
-.service-menu-area ul li a .service-icon:hover,
-.service-menu-area ul li a.active .service-icon {
-    background-color: #021832;
-    color: #fff;
-    box-shadow: 0 .125rem 1.25rem rgb(34 30 31 / 40%);
+.service-card:hover {
+  transform: translateY(-8px);
+  background: rgb(112, 163, 161);
 }
 
-.service-menu-area ul li:nth-child(1) {
-    margin-left: 0.5625rem;
-}
-
-.service-menu-area ul li:nth-child(2) {
-    margin-left: -2.9375rem;
-}
-
-.service-menu-area ul li:nth-child(3) {
-    margin-left: -6.375rem;
-}
-
-.service-menu-area ul li:nth-child(4) {
-    margin-left: -8.8125rem;
-}
-
-.service-menu-area ul li a p,
-.service-menu-area ul li a h5 {
-    padding-left: 6.875rem;
-    display: block;
-    text-align: left;
-}
-
-.service-menu-area ul li a p span {
-    color: var(--secondary-text)
-}
-
-.counter {
-    background-image: url('../images/counter-bg.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 3.125rem;
-    position: relative;
-}
-
-.counter::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-black);
-    opacity: 0.5;
-    z-index: 1;
-}
-
-.counter h1,
-.counter p {
-    position: relative;
-    z-index: 3;
-    color: var(--text-white)
-}
 
 /*7 Team Section */
 .team_wrapper .card {
